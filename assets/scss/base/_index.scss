@@ -1,0 +1,11 @@
+@import "reset";
+
+// common body background color
+body {
+  background-color: var(--bg-secondary);
+  @include custom-scroll;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--text-primary-rgb), .4);
+  }
+}
