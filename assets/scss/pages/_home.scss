@@ -1,2 +1,311 @@
-// .home-page {
-// }
+.registration {
+  // background: rgb(1, 1, 48);
+  // overflow: hidden !important;
+}
+
+.registration-wrapper {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq(phone) {
+    position: relative;
+    flex-direction: column-reverse;
+    min-height: 100%;
+  }
+}
+
+.hp-logo {
+  max-width: 350px;
+  min-width: 350px;
+
+  @include mq(phone) {
+    display: none;
+  }
+}
+
+.register-img {
+  min-height: 100%;
+  overflow: hidden;
+  max-width: 757px;
+  width: fit-content;
+
+  @media screen and (max-width: 1400px) {
+    max-width: 590px;
+
+  }
+}
+
+.register-image {
+  min-height: 100%;
+  max-width: 100%;
+  // max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  // width: 100%;
+
+  /* Ensure the overflow is hidden */
+  // background-image: url("#{$image-path}/assets/images/Asset 4.png");
+  // background-size: cover;
+  // background-position: center;
+  @media screen and (max-width: 1127px) {
+    max-width: 670px;
+  }
+
+  @include mq(phone) {
+    display: none;
+  }
+}
+
+.form-wrapper {
+  position: relative;
+  padding: 0 14px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: 1127px) {
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 45%;
+  }
+}
+
+.svg-wave {
+  // overflow: hidden;
+  // left: -49px;
+  /* Ensure the overflow is hidden */
+  // position: relative;
+
+  /* Add relative positioning for containment */
+  // @media screen and (max-width: 1400px) {
+  //   left: -41px;
+  // }
+
+  @media screen and (max-width: 1127px) {
+    display: none;
+  }
+}
+
+.wave-svg {
+  position: absolute;
+  max-width: 482px;
+  // min-height: 100dvh;
+  right: 322px;
+  overflow: hidden;
+
+  /* Ensure the overflow is hidden */
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1127px) {
+    display: none;
+  }
+}
+
+.login-title {
+  color: #000;
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  justify-content: start;
+
+  @include mq(phone) {
+    font-size: 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+
+  @include mq(phone) {
+    font-size: 16px;
+  }
+}
+
+.form-group input {
+  width: 100%;
+  min-width: 300px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  color: #000;
+  outline: none;
+  border-radius: 6px;
+}
+
+.form-group button {
+  padding: 10px 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password {
+  color: #000;
+  text-decoration: underline;
+  transition: all .4s ease-in-out;
+  width: fit-content;
+  cursor: pointer;
+  margin-bottom: 60px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.reset-password,
+.sign-password {
+  color: #000;
+  text-decoration: underline;
+  transition: all .4s ease-in-out;
+  width: fit-content;
+  cursor: pointer;
+  margin-bottom: 8px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.login {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.registration-resp {
+  position: relative;
+  display: none;
+
+  @include mq(phone) {
+    display: block;
+  }
+}
+
+.resp-svg {
+  position: absolute;
+  top: 90px;
+  max-width: 100%;
+
+  @media screen and (max-width: 505px) {
+    top: 70px;
+  }
+}
+
+.hp-logo-resp {
+  max-width: 200px;
+  min-width: 200px;
+
+  @media screen and (max-width: 505px) {
+    max-width: 160px;
+    min-width: 160px;
+  }
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 60px;
+
+  @media screen and (max-width: 505px) {
+    font-size: 16px;
+    margin-right: 18px;
+  }
+}
+
+.img-1 {
+  display: block;
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
+
+  @include mq(phone) {
+    display: none;
+  }
+}
+
+.img-2 {
+  display: none;
+
+  @media screen and (max-width: 1400px) {
+    display: block;
+  }
+
+  @include mq(phone) {
+    display: none;
+  }
+}
+
+.logo-wrapper-header {
+  position: relative;
+  z-index: 9999;
+}
+
+.resp-svg-header {
+  position: absolute;
+  top: -30px;
+
+  @media screen and (max-width: 1496px) {
+    top: 0;
+  }
+
+  @media screen and (max-width: 1048px) {
+    top: 20px;
+  }
+
+  @media screen and (max-width: 856px) {
+    top: 40px;
+  }
+
+  @media screen and (max-width: 727px) {
+    top: 30px;
+  }
+}
+
+.hp-logo-header {
+  max-width: 30px;
+  min-width: 300px;
+
+  @media screen and (max-width: 757px) {
+    max-width: 160px;
+    min-width: 160px;
+  }
+}
+
+.logo-text-header {
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 40px;
+
+  @media screen and (max-width: 856px) {
+
+    font-size: 20px;
+    margin-right: 18px;
+  }
+
+
+  @media screen and (max-width: 757px) {
+    font-size: 16px;
+    margin-right: 18px;
+  }
+}
