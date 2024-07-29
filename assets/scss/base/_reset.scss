@@ -1,3 +1,25 @@
+@font-face {
+	font-family: "form";
+	font-style: normal;
+	font-weight: 400;
+	src: local("form"), url("../form/FormaDJRDisplay-Regular.woff") format("woff");
+}
+
+
+@font-face {
+	font-family: "form";
+	font-style: normal;
+	font-weight: 500;
+	src: local("form"), url("../form/FormaDJRMicro-Regular.woff2") format("woff");
+}
+
+// @font-face {
+// 	font-family: "Nohemi";
+// 	font-style: normal;
+// 	font-weight: 600;
+// 	src: local("Nohemi"), url("../Nohemi/Nohemi-SemiBold.ttf") format("woff");
+// }
+
 /* Use a more-intuitive box-sizing model. */
 *,
 *::before,
