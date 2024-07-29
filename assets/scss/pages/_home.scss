@@ -42,12 +42,12 @@
 
 .register-image {
   min-height: 100%;
-  max-width: 720px;
+  max-width: 100%;
   // max-width: 100%;
   object-fit: cover;
   overflow: hidden;
-  // width: 100%;
 
+  // width: 100%;
   /* Ensure the overflow is hidden */
   // background-image: url("#{$image-path}/assets/images/Asset 4.png");
   // background-size: cover;
@@ -55,6 +55,9 @@
   // @media screen and (max-width: 1127px) {
   //   max-width: 670px;
   // }
+  @media screen and (max-width:1500px) {
+    max-width: 720px;
+  }
 
   @include mq(phone) {
     display: none;
