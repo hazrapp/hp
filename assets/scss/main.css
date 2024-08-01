@@ -1196,9 +1196,10 @@ body::-webkit-scrollbar-thumb {
 
 .registration-wrapper {
   min-height: 100dvh;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   background-color: var(--primary);
+  grid-template-columns: 1fr 1fr;
 }
 @media only screen and (max-width: 767px) {
   .registration-wrapper {
@@ -1235,7 +1236,7 @@ body::-webkit-scrollbar-thumb {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
-  transform: scale(1.15);
+  transform: scale(1.14);
   transform-origin: center;
 }
 @media only screen and (max-width: 767px) {

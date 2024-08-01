@@ -4,9 +4,10 @@
 
 .registration-wrapper {
   min-height: 100dvh;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   background-color: var(--primary);
+  grid-template-columns: 1fr 1fr;
 
   @include mq(phone) {
     position: relative;
@@ -39,7 +40,7 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
-  transform: scale(1.15);
+  transform: scale(1.14);
   transform-origin: center;
 
   @include mq(phone) {
