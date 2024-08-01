@@ -1222,20 +1222,21 @@ body::-webkit-scrollbar-thumb {
   min-height: 100%;
   overflow: hidden;
   max-width: 100%;
-  align-items: center;
-}
-@media screen and (max-width: 1590px) {
-  .register-img {
-    max-width: 720px;
-  }
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
 }
 
 .register-image {
   min-height: 100%;
-  max-width: 100%;
-  width: 100%;
+  width: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  transform: scale(1.15);
+  transform-origin: center;
 }
 @media only screen and (max-width: 767px) {
   .register-image {
