@@ -2,15 +2,11 @@
   font-family: 'form', sans-serif;
 }
 
-.registration {
-  // background: rgb(1, 1, 48);
-  // overflow: hidden !important;
-}
-
 .registration-wrapper {
   min-height: 100dvh;
   display: flex;
   justify-content: space-between;
+  background-color: var(--primary);
 
   @include mq(phone) {
     position: relative;
@@ -32,32 +28,19 @@
   min-height: 100%;
   overflow: hidden;
   max-width: 100%;
-  width: fit-content;
+  align-items: center;
 
-  // @media screen and (max-width: 1400px) {
-  //   max-width: 590px;
+  @media screen and (max-width: 1590px) {
+    max-width: 720px;
 
-  // }
+  }
 }
 
 .register-image {
   min-height: 100%;
   max-width: 100%;
-  // max-width: 100%;
+  width: 100%;
   object-fit: cover;
-  overflow: hidden;
-
-  // width: 100%;
-  /* Ensure the overflow is hidden */
-  // background-image: url("#{$image-path}/assets/images/Asset 4.png");
-  // background-size: cover;
-  // background-position: center;
-  // @media screen and (max-width: 1127px) {
-  //   max-width: 670px;
-  // }
-  @media screen and (max-width:1500px) {
-    max-width: 720px;
-  }
 
   @include mq(phone) {
     display: none;
@@ -81,41 +64,9 @@
   }
 }
 
-.svg-wave {
-  // overflow: hidden;
-  // left: -49px;
-  /* Ensure the overflow is hidden */
-  // position: relative;
-
-  /* Add relative positioning for containment */
-  // @media screen and (max-width: 1400px) {
-  //   left: -41px;
-  // }
-
-  @media screen and (max-width: 1127px) {
-    display: none;
-  }
-}
-
-.wave-svg {
-  position: absolute;
-  max-width: 482px;
-  // min-height: 100dvh;
-  right: 322px;
-  overflow: hidden;
-
-  /* Ensure the overflow is hidden */
-  @media screen and (max-width: 1400px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1127px) {
-    display: none;
-  }
-}
 
 .login-title {
-  color: #000;
+  color: var(--tertiary);
   font-size: 26px;
   font-weight: 600;
   display: flex;
@@ -133,7 +84,7 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #000;
+  color: var(--tertiary);
 
   @include mq(phone) {
     font-size: 16px;
@@ -145,17 +96,17 @@
   min-width: 300px;
   padding: 8px;
   box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #007bff;
-  color: #000;
+  background-color: var(--tertiary-light);
+  border: 1px solid var(--secondary-light);
+  color: var(--tertiary);
   outline: none;
   border-radius: 6px;
 }
 
 .form-group button {
   padding: 10px 40px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--tertiary-light);
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -164,11 +115,11 @@
 }
 
 .form-group button:hover {
-  background-color: #0056b3;
+  background-color: var(--secondary-dark);
 }
 
 .forgot-password {
-  color: #000;
+  color: var(--tertiary);
   text-decoration: underline;
   transition: all .4s ease-in-out;
   width: fit-content;
@@ -182,7 +133,7 @@
 
 .reset-password,
 .sign-password {
-  color: #000;
+  color: var(--tertiary);
   text-decoration: underline;
   transition: all .4s ease-in-out;
   width: fit-content;
@@ -212,6 +163,7 @@
   position: absolute;
   top: 90px;
   max-width: 100%;
+  z-index: 9999;
 
   @media screen and (max-width: 505px) {
     top: 70px;
@@ -232,7 +184,8 @@
   font-size: 20px;
   font-weight: 500;
   margin-right: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--tertiary);
+  color: var(--tertiary);
 
   @media screen and (max-width: 505px) {
     font-size: 16px;
@@ -240,33 +193,38 @@
   }
 }
 
-.img-1 {
-  display: block;
+// .img-1 {
+//   display: block;
 
-  @media screen and (max-width: 1400px) {
-    display: none;
-  }
+//   @media screen and (max-width: 1400px) {
+//     display: none;
+//   }
 
-  @include mq(phone) {
-    display: none;
-  }
-}
+//   @include mq(phone) {
+//     display: none;
+//   }
+// }
 
-.img-2 {
-  display: none;
+// .img-2 {
+//   display: none;
 
-  @media screen and (max-width: 1400px) {
-    display: block;
-  }
+//   @media screen and (max-width: 1400px) {
+//     display: block;
+//   }
 
-  @include mq(phone) {
-    display: none;
-  }
+//   @include mq(phone) {
+//     display: none;
+//   }
+// }
+.logo-wrapper {
+  background-color: var(--primary);
+
 }
 
 .logo-wrapper-header {
   position: relative;
   z-index: 9999;
+  background-color: var(--primary);
 }
 
 .resp-svg-header {
@@ -304,7 +262,7 @@
   font-size: 32px;
   font-weight: 500;
   margin-right: 40px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--tertiary);
 
 
   @media screen and (max-width: 856px) {
