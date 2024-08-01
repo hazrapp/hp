@@ -23,8 +23,8 @@ function updateLogo() {
   const theme = document.documentElement.getAttribute('data-theme');
 
   if (theme === 'theme-light') {
-    hpLogo.src = './assets/images/svg/SVG/Asset 2.svg';
-    hpLogoResp.src = './assets/images/svg/SVG/Asset 2.svg';
+    hpLogo.src = './assets/images/HP-Imagine-Logo-Official-RGB-01.svg';
+    hpLogoResp.src = './assets/images/HP-Imagine-Logo-Official-RGB-01.svg';
   } else if (theme === 'theme-dark') {
     hpLogo.src = './assets/images/HP-Imagine-Logo-Official-RGB-04.svg';
     hpLogoResp.src = './assets/images/HP-Imagine-Logo-Official-RGB-04.svg';
