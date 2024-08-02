@@ -1403,35 +1403,27 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }
 
-.logo-wrapper-header {
+.header {
   position: relative;
   z-index: 9999;
   background-color: var(--primary);
+  max-height: 100%;
+  height: 210px;
+}
+
+.header-logo-wrapper {
+  position: relative;
+  z-index: 9999;
 }
 
 .resp-svg-header {
   position: absolute;
-  top: -30px;
-}
-@media screen and (max-width: 1496px) {
-  .resp-svg-header {
-    top: 0;
-  }
-}
-@media screen and (max-width: 1048px) {
-  .resp-svg-header {
-    top: 20px;
-  }
-}
-@media screen and (max-width: 856px) {
-  .resp-svg-header {
-    top: 40px;
-  }
-}
-@media screen and (max-width: 727px) {
-  .resp-svg-header {
-    top: 30px;
-  }
+  bottom: 0;
+  left: -95px;
+  transform: scale(1.15);
+  transform-origin: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hp-logo-header {
@@ -1445,26 +1437,26 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.logo-text-header {
+.header-logo-text {
   font-size: 32px;
   font-weight: 500;
   margin-right: 40px;
-  border-bottom: 2px solid var(--tertiary);
+  color: var(--tertiary);
 }
 @media screen and (max-width: 856px) {
-  .logo-text-header {
+  .header-logo-text {
     font-size: 26px;
     margin-right: 18px;
   }
 }
 @media screen and (max-width: 757px) {
-  .logo-text-header {
+  .header-logo-text {
     font-size: 16px;
     margin-right: 18px;
   }
 }
 @media screen and (max-width: 400px) {
-  .logo-text-header {
+  .header-logo-text {
     font-size: 13px;
     margin-right: 8px;
   }
