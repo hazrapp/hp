@@ -227,6 +227,8 @@
 .header-logo-wrapper {
   position: relative;
   z-index: 9999;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resp-svg-header {
@@ -299,9 +301,8 @@
 
 .header-svg {
   height: 244px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   // color: white;
   background-size: cover;
   background-repeat: no-repeat;

@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const theme = htmlElement.getAttribute('data-theme');
       if (theme === 'theme-dark') {
           headerSvg.style.backgroundImage = 'var(--header-bg-dark)';
-          hpLogoHeader.src = "./assets/images/HP-Imagine-Logo-Official-RGB-04.svg";
+          hpLogoHeader.src = "./assets/images/HP white.svg";
           headerLogoText.style.color= '#fff'
       } else if (theme === 'theme-light') {
           headerSvg.style.backgroundImage = 'var(--header-bg-light)';
-          hpLogoHeader.src = "./assets/images/HP-Imagine-Logo-Official-RGB-01.svg";
+          hpLogoHeader.src = "./assets/images/imagine hp.svg";
           headerLogoText.style.color= 'black'
       }
   }
