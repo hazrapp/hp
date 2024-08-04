@@ -1205,9 +1205,9 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 767px) {
   .registration-wrapper {
-    position: relative;
+    position: absolute;
     flex-direction: column-reverse;
-    min-height: 100%;
+    min-height: 0dvh;
   }
 }
 
@@ -1258,11 +1258,6 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1127px) {
   .form-wrapper {
     padding-left: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .form-wrapper {
-    padding-top: 55%;
   }
 }
 
@@ -1365,15 +1360,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .resp-svg {
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: -18px;
   max-width: 100%;
   z-index: 9999;
-}
-@media screen and (max-width: 505px) {
-  .resp-svg {
-    top: 70px;
-  }
 }
 
 .hp-logo-resp {
