@@ -14,7 +14,7 @@
   @include mq(phone) {
     position: absolute;
     flex-direction: column-reverse;
-    min-height: 0dvh;
+    min-height: 0;
   }
 }
 
