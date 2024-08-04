@@ -10,9 +10,9 @@
   grid-template-columns: 1fr 1fr;
 
   @include mq(phone) {
-    position: relative;
+    position: absolute;
     flex-direction: column-reverse;
-    min-height: 100%;
+    min-height: 0dvh;
   }
 }
 
@@ -60,9 +60,9 @@
     padding-left: 30px;
   }
 
-  @media screen and (max-width: 767px) {
-    padding-top: 55%;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding-top: 55%;
+  // }
 }
 
 
@@ -161,14 +161,14 @@
 }
 
 .resp-svg {
-  position: absolute;
-  top: 90px;
+  position: relative;
+  top: -18px;
   max-width: 100%;
   z-index: 9999;
 
-  @media screen and (max-width: 505px) {
-    top: 70px;
-  }
+  // @media screen and (max-width: 505px) {
+  //   top: 70px;
+  // }
 }
 
 .hp-logo-resp {
