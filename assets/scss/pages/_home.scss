@@ -222,35 +222,6 @@
 
 }
 
-.header{
-  position: relative;
-  z-index: 9999;
-  background-color: var(--primary);
-  max-height: 100%;
-  height: 210px;
-
-
-  // @media screen and (max-width: 1570px) {
-  //   height: 210px;
-  // }
-
-  // @media screen and (max-width: 1390px) {
-  //   height: 203px;
-  // }
-
-  // @media screen and (max-width: 1048px) {
-  //   height: 195px;
-  // }
-
-  // @media screen and (max-width: 854px) {
-  //   height: 175px;
-  // }
-
-  // @media screen and (max-width: 600px) {
-  //   height: 125px;
-  // }
-}
-
 .header-logo-wrapper {
   position: relative;
   z-index: 9999;
