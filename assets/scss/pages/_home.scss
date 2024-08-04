@@ -1,5 +1,7 @@
 :root {
   font-family: 'form', sans-serif;
+  --header-bg-dark: url("./assets/images/svg/SVG/Asset 11.svg");
+  --header-bg-light: url("./assets/images/svg/SVG/Asset 12.svg");
 }
 
 .registration-wrapper {
@@ -291,4 +293,17 @@
     margin-right: 8px;
 
   }
+}
+
+//
+
+.header-svg {
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

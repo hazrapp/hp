@@ -35,3 +35,36 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial call to set the correct logo based on the current theme
   updateLogo();
 });
+
+
+
+
+// 
+document.addEventListener('DOMContentLoaded', function() {
+  const htmlElement = document.documentElement; // <html> element
+  const headerSvg = document.querySelector('.header-svg'); // <div> with class 'header-svg'
+  const hpLogoHeader = document.getElementById('hp-logo-header');
+  const headerLogoText = document.querySelector('.header-logo-text');
+
+  // Function to update background image based on the theme
+  function updateBackgroundImage() {
+      const theme = htmlElement.getAttribute('data-theme');
+      if (theme === 'theme-dark') {
+          headerSvg.style.backgroundImage = 'var(--header-bg-dark)';
+          hpLogoHeader.src = "./assets/images/HP-Imagine-Logo-Official-RGB-04.svg";
+          headerLogoText.style.color= '#fff'
+      } else if (theme === 'theme-light') {
+          headerSvg.style.backgroundImage = 'var(--header-bg-light)';
+          hpLogoHeader.src = "./assets/images/HP-Imagine-Logo-Official-RGB-01.svg";
+          headerLogoText.style.color= 'black'
+      }
+  }
+
+  // Call the function to set the initial background image
+  updateBackgroundImage();
+
+  // Optional: You could also set up an observer if the theme changes dynamically
+  // (e.g., if the data-theme attribute changes at runtime)
+  const observer = new MutationObserver(updateBackgroundImage);
+  observer.observe(htmlElement, { attributes: true, attributeFilter: ['data-theme'] });
+});
