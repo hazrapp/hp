@@ -1192,6 +1192,8 @@ body::-webkit-scrollbar-thumb {
 
 :root {
   font-family: "form", sans-serif;
+  --header-bg-dark: url("./assets/images/svg/SVG/Asset 11.svg");
+  --header-bg-light: url("./assets/images/svg/SVG/Asset 12.svg");
 }
 
 .registration-wrapper {
@@ -1260,7 +1262,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 767px) {
   .form-wrapper {
-    padding-top: 45%;
+    padding-top: 55%;
   }
 }
 
@@ -1452,4 +1454,14 @@ body::-webkit-scrollbar-thumb {
     font-size: 13px;
     margin-right: 8px;
   }
+}
+
+.header-svg {
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
