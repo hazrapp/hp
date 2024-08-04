@@ -61,7 +61,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding-top: 45%;
+    padding-top: 55%;
   }
 }
 
@@ -229,12 +229,13 @@
 
 .resp-svg-header {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: -95px;
   transform: scale(1.15);
   transform-origin: center;
   object-fit: cover;
 }
+
 //   @media screen and (max-width: 1390p) {
 //     left: -85px;
 //     top: 10px
