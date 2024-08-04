@@ -1454,4 +1454,9 @@ body::-webkit-scrollbar-thumb {
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-livestream {
+  margin: 60px 0;
+  padding: 0 40px;
 }/*# sourceMappingURL=main.css.map */
