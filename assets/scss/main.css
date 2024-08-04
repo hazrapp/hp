@@ -1207,7 +1207,7 @@ body::-webkit-scrollbar-thumb {
   .registration-wrapper {
     position: absolute;
     flex-direction: column-reverse;
-    min-height: 0dvh;
+    min-height: 0;
   }
 }
 
@@ -1450,7 +1450,7 @@ body::-webkit-scrollbar-thumb {
 
 .header-svg {
   height: 244px;
-  background-size: cover;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
 }/*# sourceMappingURL=main.css.map */
