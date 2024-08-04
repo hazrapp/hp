@@ -1400,6 +1400,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 9999;
   display: flex;
   justify-content: space-between;
+  padding: 20px 40px;
 }
 
 .resp-svg-header {
