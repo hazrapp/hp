@@ -308,7 +308,11 @@
   // color: white;
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
+
+  @include mq(phone) {
+    height:143px;
+  }
 }
 
 .main-livestream {
